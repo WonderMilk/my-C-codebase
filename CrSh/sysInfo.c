@@ -21,11 +21,11 @@ that this value has not been set yet
 */
 #ifdef WINOS_64
 	static const int8_t OSBaseInfo = 0x05;
-#elif WINOS_32
+#elifdef WINOS_32
 	static const int8_t OSBaseInfo = 0x01;
-#elif MAC
+#elifdef MAC
 	static const int8_t OSBaseInfo = 0x06;
-#elif LINUX
+#elifdef LINUX
 	static const int8_t OSBaseInfo = 0x07;
 #endif
 
